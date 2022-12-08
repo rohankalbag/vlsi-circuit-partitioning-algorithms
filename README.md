@@ -11,11 +11,11 @@ Abstract: Often the VLSI design schematic of a system cannot be emulated/verifie
 
 Suppose we partition the graph into sets $P_1$ and $P_2$, the sum of weights of interconnections between the two partitions is called **cut size**
 
-Thus splitting the components among two FPGAs so as to minimize the cost of interconnects (which can be represented by the quantity **cut size**) denoted by $C_1$ which should be minimized and also the equitable balancing of components on both FPGAS (if components are equitably balanced among both the FPGAs, we can represent this quantity by $ C_2 = N(P_1) \cdot N(P_2)$ where $N(\cdot)$ represents the cardinality (number of nodes) of the partition) which should be maximized.
+Thus splitting the components among two FPGAs so as to minimize the cost of interconnects (which can be represented by the quantity **cut size**) denoted by $C_1$ which should be minimized and also the equitable balancing of components on both FPGAS (if components are equitably balanced among both the FPGAs, we can represent this quantity by $ C_2 = N(P_1) . N(P_2)$ where $N(.)$ represents the cardinality (number of nodes) of the partition) which should be maximized.
 
-Thus, one can use the simple metric **ratio cut** $\frac{C_1/C_2}$ to ascertain and compare the quality of partitioning performed by various computer aided design partitioning algorithms. Typically a smaller value of **ratio cut** denotes a better partition.
+Thus, one can use the simple metric **ratio cut** $C_1/C_2$ to ascertain and compare the quality of partitioning performed by various computer aided design partitioning algorithms. Typically a smaller value of **ratio cut** denotes a better partition.
 
-A much better cost function can be modelled using co-optimization as well to get the minimization problem $min(\alpha \cdot C_1 + \frac{(1-\alpha)}{C_2})$ where $0 \le \alpha \le 1$ is a co-optimization metric.
+A much better cost function can be modelled using co-optimization as well to get the minimization problem $min(\alpha . C_1 + (1-\alpha)/C_2)$ where $0 <= \alpha <= 1$ is a co-optimization metric.
 
 We try to implement graph partitioning algorithms and heuristics like the **Kernighan-Lin Algorithm**, **Clustering Based Heuristic**, **Hagen Kahng EIG Algorithm** and compare their analyse their capability in partitioning a given graph network into two partitions using `Python 3.x`.
 
