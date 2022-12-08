@@ -7,7 +7,7 @@
 - Rohan Rajesh Kalbag
 - Anubhav Bhatla
 
-## *Abstract: Often the VLSI design schematic of a system cannot be emulated/verified on a single FPGA, due to the finite number of programmable logic elements present in the FPGA. A interconnections between circuit elements can be conveniently represented using graphs, Logic gates, LUTs, FFs and other entities present in the design can be modelled as graph nodes and the interconnections are modelled as edges, if there are multiple parallel interconnects between two entities, we can represent the same using weighted graphs. Suppose we wish to computerize dividing the design among 2 FPGAs using CAD, we can model the problem as a graph partitioning problem.*
+#### *Abstract: Often the VLSI design schematic of a system cannot be emulated/verified on a single FPGA, due to the finite number of programmable logic elements present in the FPGA. Interconnections between circuit elements can be conveniently represented using graphs, Logic gates, LUTs, FFs and other entities present in the design can be modelled as graph nodes and the interconnections are modelled as edges, if there are multiple parallel interconnects between two entities, we can represent the same using weighted graphs. Suppose we wish to computerize dividing the design among 2 FPGAs using CAD, we can model the problem as a graph partitioning problem.*
 
 ## Some more Ideas
 Suppose we partition the graph into sets $P_1$ and $P_2$, the sum of weights of interconnections between the two partitions is called **cut size**
