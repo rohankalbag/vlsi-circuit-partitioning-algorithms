@@ -1,4 +1,4 @@
-# Implementation and Analysis of Various Circuit Partitioning Algorithms
+# Implementation, Visualisation and Analysis of Various Circuit Partitioning Algorithms
 
 ## Course Project - EE 677 - Foundations of VLSI CAD
 ### Instructor - Prof. Virendra Singh
@@ -20,7 +20,7 @@ A much better cost function can be modelled using co-optimization as well to get
 
 ## Goals of Project
 
-We try to implement graph partitioning algorithms and heuristics like the **Kernighan-Lin Algorithm**, **Clustering Based Heuristic**, **Hagen Kahng EIG Algorithm** and compare their analyse their capability in partitioning a given graph network into two partitions using `Python 3.x`.
+We try to implement graph partitioning algorithms and heuristics like the **Kernighan-Lin Algorithm**, **Clustering Based Heuristic**, **Hagen Kahng EIG Algorithm** and compare, analyse their capability in partitioning a given graph network into two partitions and visualise them using plotting tools of `matplotlib`, `networkx` libraries of `Python`
 
 ## For Setting up Python
 
